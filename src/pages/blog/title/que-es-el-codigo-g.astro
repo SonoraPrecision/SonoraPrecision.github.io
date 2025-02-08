@@ -1,0 +1,174 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import About from "../../../components/About.astro";
+import Mention from "../../../components/Mention.astro";
+import Solutions from "../../../components/Solutions.astro";
+import Location from "../../../components/Location.astro";
+import Services from "../../../components/Services.astro";
+import Members from "../../../components/Members.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+URL: https://flowbite.com/docs/components/typography/ 
+-->
+
+  <main
+    class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+  >
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+      <article
+        class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert text-black"
+      >
+        <header class="mb-4 lg:mb-6 not-format">
+          <address class="flex items-center mb-6 not-italic">
+            <div
+              class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+            >
+            </div>
+          </address>
+          <h1
+            class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+          >
+            Codigo G
+          </h1>
+          <p class="lead text-black">
+            El código G es un lenguaje de programación estándar utilizado en
+            sistemas de Control Numérico por Computadora (CNC). Su función
+            principal es dar instrucciones específicas a las máquinas
+            herramientas para realizar tareas como movimientos, cortes,
+            perforaciones, y otros procesos de mecanizado. Aunque existen otros
+            lenguajes utilizados en la industria, el código G es el más
+            ampliamente adoptado debido a su simplicidad, flexibilidad y
+            estandarización.
+          </p>
+          <p>
+            En lugar de operarlas manualmente, estas máquinas funcionan a través
+            de instrucciones precisas generadas por una computadora. Este
+            sistema permite crear piezas de manera precisa y repetitiva,
+            siguiendo un diseño previamente definido.
+          </p>
+          <figure>
+            <img
+              src="https://st5.depositphotos.com/5561222/78159/i/600/depositphotos_781594194-stock-photo-abstract-scene-cnc-milling-machine.jpg"
+              alt=""
+            />
+          </figure>
+          <p>
+            El código G, también conocido como lenguaje de programación de
+            máquinas herramientas, se compone de una serie de comandos que
+            instruyen a la máquina sobre qué acciones realizar. Cada comando, o
+            línea de código, está compuesto por caracteres alfanuméricos que
+            indican órdenes específicas. Las letras (como "G", "M", "X", "Y",
+            "Z", etc.) representan diferentes funciones, mientras que los
+            números proporcionan valores o parámetros para esas funciones.
+          </p>
+          <p>
+            Por ejemplo, un comando como G01 X10 Y15 Z-5 le indica a la máquina
+            que realice un movimiento lineal hacia las coordenadas X=10, Y=15 y
+            Z=-5 en el espacio tridimensional.
+          </p>
+          <p>
+            El código G tiene sus raíces en el desarrollo inicial del CNC
+            durante la década de 1950. Fue creado como una forma estandarizada
+            de traducir las instrucciones de diseño en comandos que las máquinas
+            podían interpretar. En 1956, la Electronic Industries Alliance (EIA)
+            publicó el estándar RS-274D, que formalizó las bases del código G.
+            Este estándar sigue siendo la base de muchas implementaciones
+            modernas, aunque ha evolucionado con el tiempo.
+          </p>
+          <p>
+            El desarrollo del código G se centró en crear un sistema que fuera
+            fácil de interpretar para las máquinas, pero también comprensible
+            para los operadores humanos. Con el tiempo, se integraron avances
+            como el control por computadora y software de diseño CAD/CAM, que
+            generaban automáticamente el código G a partir de modelos 3D.
+          </p>
+          <p>
+            El código G se distingue por ser un lenguaje que combina precisión y
+            simplicidad. Su estructura permite definir con exactitud los
+            movimientos y operaciones que una máquina CNC debe realizar,
+            asegurando tolerancias mínimas y acabados de alta calidad. Además,
+            su flexibilidad lo convierte en una herramienta versátil, ya que
+            puede ser utilizado en una amplia gama de máquinas y procesos
+            industriales, desde fresado hasta corte con láser. La lógica detrás
+            de sus comandos sigue un formato estandarizado que facilita su
+            comprensión, aunque puede requerir cierta experiencia para
+            escribirlo manualmente con eficacia.
+          </p>
+          <p>
+            El código G se distingue por ser un lenguaje que combina precisión y
+            simplicidad. Su estructura permite definir con exactitud los
+            movimientos y operaciones que una máquina CNC debe realizar,
+            asegurando tolerancias mínimas y acabados de alta calidad. Además,
+            su flexibilidad lo convierte en una herramienta versátil, ya que
+            puede ser utilizado en una amplia gama de máquinas y procesos
+            industriales, desde fresado hasta corte con láser. La lógica detrás
+            de sus comandos sigue un formato estandarizado que facilita su
+            comprensión, aunque puede requerir cierta experiencia para
+            escribirlo manualmente con eficacia. El proceso para generar el
+            código G generalmente comienza con un diseño detallado en software
+            CAD (Diseño Asistido por Computadora). Este modelo digital de la
+            pieza deseada se transfiere a un programa CAM (Fabricación Asistida
+            por Computadora), que se encarga de calcular las trayectorias de la
+            herramienta necesarias para materializar el diseño. El software
+            traduce estas trayectorias en código G, considerando factores como
+            velocidades de avance, profundidades de corte y secuencias de
+            operación. Antes de cargar el programa en la máquina CNC, se simula
+            virtualmente para detectar posibles errores o colisiones, lo que
+            minimiza riesgos durante la ejecución.
+          </p>
+          <p>
+            Las máquinas CNC se clasifican en diferentes tipos, cada una
+            adaptada a aplicaciones específicas. Por ejemplo, las fresadoras CNC
+            se utilizan para cortar y dar forma a los materiales mediante
+            movimientos en múltiples ejes, mientras que los tornos CNC son
+            ideales para operaciones que implican girar el material para
+            trabajar sobre él. Las cortadoras láser CNC destacan por su
+            capacidad para realizar cortes precisos en materiales como metal,
+            madera y plástico mediante el uso de un rayo láser. Las cortadoras
+            de plasma CNC, por otro lado, son perfectas para trabajar con
+            materiales metálicos utilizando un arco de plasma. Los routers CNC,
+            en cambio, son herramientas versátiles y eficientes para cortar
+            madera, plásticos e incluso aluminio. También existen las máquinas
+            de electroerosión CNC, que emplean descargas eléctricas controladas
+            para cortar materiales conductores, y las impresoras 3D, que, aunque
+            funcionan bajo un principio de adición de material, comparten
+            ciertas similitudes con el CNC tradicional.
+          </p>
+          <p>
+            En cuanto a sus ventajas, la tecnología CNC ofrece una precisión
+            excepcional que la hace ideal para fabricar piezas complejas con
+            tolerancias muy estrictas. Además, su capacidad para repetir
+            procesos de manera idéntica garantiza la consistencia en la
+            producción de múltiples piezas. Este nivel de automatización no solo
+            reduce los tiempos de fabricación, sino que también incrementa
+            significativamente la productividad. Por su flexibilidad, permite
+            cambiar rápidamente entre diseños y fabricar piezas personalizadas
+            sin necesidad de modificar físicamente las máquinas. Al automatizar
+            gran parte del proceso, minimiza los errores humanos, lo que resulta
+            en una producción más confiable. Finalmente, el CNC optimiza el uso
+            de materiales, reduciendo desperdicios y contribuyendo a un uso más
+            eficiente de los recursos.
+          </p>
+          <img
+            src="https://st4.depositphotos.com/5561222/26361/i/600/depositphotos_263615346-stock-photo-the-cnc-lathe-machine-cutting.jpg"
+            alt="machine"
+          />
+          <Footer />
+        </header>
+      </article>
+    </div>
+  </main>
+</Layout>

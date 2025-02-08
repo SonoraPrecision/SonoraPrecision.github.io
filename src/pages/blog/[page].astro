@@ -1,0 +1,149 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Header from "../../components/Header.astro";
+import About from "../../components/About.astro";
+import Mention from "../../components/Mention.astro";
+import Solutions from "../../components/Solutions.astro";
+import Location from "../../components/Location.astro";
+import Services from "../../components/Services.astro";
+import Members from "../../components/Members.astro";
+import Footer from "../../components/Footer.astro";
+
+export async function getStaticPaths({ paginate }) {
+  const astronautPages = [
+    {
+      image: "../assets/cncmachine.jpg",
+      date: "Enero 21, 2025",
+      title: "Qué es el Mecanizado CNC",
+      slug: "que-es-el-mecanizado-cnc",
+      desc: "Desde la industria automotriz hasta la aeronáutica, su impacto es inmenso...",
+    },
+    {
+      image: "../assets/johnmachine.jpg",
+      date: "Enero 21, 2025",
+      title: "Quién inventó la CNC",
+      slug: "quien-invento-la-cnc",
+      desc: "Su innovación, potenciada por el MIT, transformó la industria manufacturera para siempre...",
+    },
+    {
+      image: "../assets/gcode.jpg",
+      date: "Enero 21, 2025",
+      title: "Qué es el codigo G",
+      slug: "que-es-el-codigo-g",
+      desc: "La clave detrás de la fabricación moderna y automatizada...",
+    },
+    {
+      image: "../assets/metal drilling.jpg",
+      date: "Enero 27, 2025",
+      title: "La revolución del mecanizado CNC en la manufactura moderna",
+      slug: "la-revolucion-del-mecanizado-cnc-en-la-manufactura-moderna",
+      desc: "Con su precision extrema, a transformado la produccion industrial",
+    },
+    {
+      image: "../assets/gcode.jpg",
+      date: "Enero 28, 2025",
+      title: "Materiales mas utilizados en el mecanizado CNC",
+      slug: "materiales-mas-utilizados-en-el-mecanizado-cnc",
+      desc: "Materiales usados en el CNC...",
+    },
+    {
+      image: "../assets/3d printer.jpg",
+      date: "Enero 27, 2025",
+      title: "Diferencias entre el mecanizado CNC y la impresión 3D",
+      slug: "diferencias-entre-el-mecanizado-cnc-y-la-impresion-3d",
+      desc: "dos tecnologías avanzadas, aliados o competencia?...",
+    },
+    {
+      image: "../assets/tool.jpg",
+      date: "Enero 29, 2025",
+      title: "Como elegir la herramienta adecuada para el mecanizado",
+      slug: "como-elegir-la-herramienta-adecuada-para-el-mecanizado",
+      desc: "La herramienta equivocada puede arruinar tu pieza, pero la correcta transforma tu trabajo...",
+    },
+  ];
+  // Generate pages from our array of astronauts, with 2 to a page
+  return paginate(astronautPages, { pageSize: 2 });
+}
+// All paginated data is passed on the "page" prop
+const { page } = Astro.props;
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <section class="py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2
+        class="font-manrope text-4xl font-bold text-gray-900 text-center mb-16"
+      >
+        Pagina {page.currentPage}
+      </h2>
+      <div class="justify-center grid grid-cols-2 gap-4">
+        {
+          page.data.map(({ image, date, title, desc, slug }, index) => (
+            <div class="group ">
+              <div class="flex items-center">
+                <img
+                  src={image}
+                  alt="blogs tailwind section"
+                  class="rounded-t-2xl h-80 w-full object-cover"
+                />
+              </div>
+              <div class="w-full h-auto p-4 lg:p-6 transition-all duration-300 rounded-b-2xl group-hover:bg-gray-50 group-hover:scale-105">
+                <span class="text-indigo-600 font-medium mb-3 block hover:">
+                  {date}
+                </span>
+                <h4 class="text-xl text-gray-900 font-medium leading-8 mb-5">
+                  {title}
+                </h4>
+                <p class="text-gray-500 leading-6 mb-10">{desc}</p>
+                <a
+                  href={"/blog/title/" + slug}
+                  class="cursor-pointer text-lg text-indigo-600 hover:text-black font-semibold"
+                >
+                  Ver mas...
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="flex items-center justify-center space-x-4 py-4"">
+    {
+      page.url.first ? (
+        <a class="text-black" href={page.url.first}>
+          First
+        </a>
+      ) : null
+    }
+    {
+      page.url.prev ? (
+        <a class="px-4 py-2 bg-gray-300 text-gray-500 font-medium rounded-l-lg clip-left hover:bg-gray-400 disabled:bg-gray-200 disabled:text-gray-400 transition" href={page.url.prev}>
+          Previous
+        </a>
+      ) : null
+    }
+    {
+      page.url.next ? (
+        <a class="px-4 py-2 bg-indigo-600 text-white font-medium rounded-r-lg clip-right hover:bg-indigo-800 transition" href={page.url.next}>
+          Next
+        </a>
+      ) : null
+    }
+    {
+      page.url.last ? (
+        <a class="text-black" href={page.url.last}>
+          Last
+        </a>
+      ) : null
+    }
+    </div>
+  </section>
+  <Footer />
+</Layout>

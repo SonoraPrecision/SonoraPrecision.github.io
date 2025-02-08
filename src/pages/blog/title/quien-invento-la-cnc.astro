@@ -1,0 +1,145 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import About from "../../../components/About.astro";
+import Mention from "../../../components/Mention.astro";
+import Solutions from "../../../components/Solutions.astro";
+import Location from "../../../components/Location.astro";
+import Services from "../../../components/Services.astro";
+import Members from "../../../components/Members.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+URL: https://flowbite.com/docs/components/typography/ 
+-->
+
+  <main
+    class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+  >
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+      <article
+        class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert text-black"
+      >
+        <header class="mb-4 lg:mb-6 not-format">
+          <address class="flex items-center mb-6 not-italic">
+            <div
+              class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+            >
+            </div>
+          </address>
+          <h1
+            class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+          >
+            El origen del CNC
+          </h1>
+          <p class="lead">
+            El CNC (Control Numérico por Computadora) tiene su origen en los
+            trabajos de John T. Parsons, un ingeniero estadounidense que en la
+            década de 1940 inició el camino hacia la automatización de máquinas
+            herramientas.
+          </p>
+          <p>
+            Parsons, junto con su equipo en la Parsons Corporation en Traverse
+            City, Michigan, buscaba métodos más precisos y eficientes para
+            fabricar componentes aeronáuticos, especialmente para la industria
+            de helicópteros.
+          </p>
+          <p>
+            Su innovación fue impulsada por la necesidad de fabricar piezas con
+            formas complejas y tolerancias muy estrictas, algo que resultaba
+            extremadamente difícil de lograr con métodos manuales.
+          </p>
+          <figure>
+            <img
+              src="https://1pds.com/wp-content/uploads/2014/08/21parsons.jpg"
+              alt=""
+            />
+          </figure>
+          <p>
+            En los años 40, Parsons experimentaba con sistemas que utilizaban
+            tarjetas perforadas para controlar movimientos mecánicos. Su
+            objetivo era fabricar componentes de alas de helicópteros que
+            requerían precisión en sus curvas y superficies. Al observar que los
+            métodos tradicionales de mecanizado no eran lo suficientemente
+            precisos ni consistentes, ideó un sistema que controlaba las
+            máquinas herramientas a través de datos introducidos en tarjetas
+            perforadas. Estas tarjetas contenían instrucciones codificadas que
+            dirigían los movimientos de la máquina de manera automatizada.
+          </p>
+          <p>
+            En 1949, Parsons colaboró con el Laboratorio de Servomecanismos del
+            Instituto de Tecnología de Massachusetts (MIT) para perfeccionar su
+            idea. En este proyecto, financiado inicialmente por la Fuerza Aérea
+            de los Estados Unidos, se desarrolló la primera máquina de Control
+            Numérico. Este prototipo utilizaba motores eléctricos controlados
+            por servomecanismos, que seguían instrucciones numéricas para mover
+            herramientas de corte con precisión sobre múltiples ejes.
+          </p>
+          <p>
+            Aunque el primer sistema desarrollado por Parsons y el MIT era
+            puramente de Control Numérico (CN) y no incluía computadoras
+            modernas, sentó las bases para lo que posteriormente sería el CNC.
+            En los años 50 y 60, la rápida evolución de las computadoras
+            permitió integrar sistemas computarizados al control numérico, lo
+            que dio lugar al Control Numérico por Computadora (CNC). Esta
+            innovación eliminó la necesidad de tarjetas perforadas y permitió
+            que las máquinas fueran programadas directamente mediante software.
+          </p>
+          <p>
+            El MIT jugó un papel crucial en la evolución de la CNC al
+            desarrollar los primeros sistemas capaces de interpretar datos
+            computarizados. En 1952, se presentó una fresadora controlada por
+            servomecanismos que seguía instrucciones codificadas en cinta de
+            papel perforada, un avance revolucionario en ese momento. Este
+            desarrollo marcó el inicio de la era de la manufactura automatizada
+            y la producción en masa de piezas complejas.
+          </p>
+          <p>
+            En la década de 1960, los avances en la tecnología de
+            semiconductores y computadoras hicieron que el CNC se volviera más
+            accesible y práctico. Empresas como General Electric y Giddings &
+            Lewis adoptaron rápidamente la tecnología, integrándola en la
+            fabricación de herramientas industriales. En los años 70 y 80, con
+            la introducción de microcomputadoras, los sistemas CNC se volvieron
+            más compactos, económicos y fáciles de usar.
+          </p>
+          <p>
+            John T. Parsons es reconocido como el "padre del Control Numérico"
+            por su visión pionera en el desarrollo de esta tecnología. Su
+            enfoque en la precisión, la eficiencia y la automatización
+            revolucionó la industria manufacturera, sentando las bases para la
+            producción moderna. En reconocimiento a su contribución, Parsons fue
+            galardonado con numerosos premios, incluido el Eli Whitney
+            Productivity Award de la Society of Manufacturing Engineers.
+          </p>
+          <img
+            src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/17867398/image/medium-899d92062277c3ab4f16cb185dc8735c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB6ZCNNAN7BE7WDQ%2F20250119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250119T080647Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ca7b7171d5f646f34e32085ae5dd6b09c824aedb59262d74244ca6b4d2bc0d99"
+            alt="john"
+          />
+          <p>
+            Hoy en día, el CNC se ha convertido en una tecnología esencial en
+            prácticamente todas las industrias manufactureras, desde la
+            automotriz hasta la aeroespacial, pasando por la médica y la
+            electrónica. Aunque el concepto original de Parsons ha evolucionado
+            con la incorporación de tecnologías avanzadas como el CAD/CAM, el
+            Internet de las Cosas (IoT) y la inteligencia artificial, la esencia
+            del control numérico sigue siendo la misma: permitir la fabricación
+            precisa, eficiente y automatizada de piezas complejas.
+          </p>
+        </header>
+      </article>
+    </div>
+  </main>
+  <Footer />
+</Layout>
