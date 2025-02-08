@@ -1,0 +1,116 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import About from "../../../components/About.astro";
+import Mention from "../../../components/Mention.astro";
+import Solutions from "../../../components/Solutions.astro";
+import Location from "../../../components/Location.astro";
+import Services from "../../../components/Services.astro";
+import Members from "../../../components/Members.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+URL: https://flowbite.com/docs/components/typography/ 
+-->
+
+  <main
+    class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+  >
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+      <article
+        class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert text-black"
+      >
+        <header class="mb-4 lg:mb-6 not-format">
+          <address class="flex items-center mb-6 not-italic">
+            <div
+              class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+            >
+            </div>
+          </address>
+          <h1
+            class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+          >
+            Materiales mas utilizados en el CNC
+          </h1>
+          <p class="lead text-black">
+            En el mecanizado CNC, la elección del material es un factor crítico
+            que influye en la precisión, durabilidad y funcionalidad de las
+            piezas producidas. Los materiales más utilizados abarcan una amplia
+            gama, desde metales hasta plásticos, cada uno seleccionado en
+            función de sus propiedades específicas y las necesidades del
+            proyecto. Los metales, como el aluminio, el acero y el titanio, son
+            los más comunes debido a su resistencia y versatilidad. El aluminio,
+            por ejemplo, es ligero, fácil de mecanizar y altamente resistente a
+            la corrosión, lo que lo hace ideal para la industria aeroespacial y
+            automotriz. Por otro lado, el acero se utiliza en aplicaciones que
+            requieren alta durabilidad, especialmente en herramientas y
+            componentes estructurales, mientras que el titanio destaca por su
+            combinación de resistencia extrema y ligereza, siendo indispensable
+            en sectores como el médico y el militar.
+          </p>
+          <p>
+            Los plásticos también juegan un papel importante en el mecanizado
+            CNC, especialmente en la fabricación de piezas ligeras,
+            eléctricamente aislantes o resistentes a químicos. Materiales como
+            el policarbonato, el acrílico y el nylon son ampliamente utilizados
+            por su capacidad para ser moldeados con precisión sin sacrificar
+            resistencia. Además, los plásticos técnicos, como el PEEK (poliéter
+            éter cetona), ofrecen propiedades excepcionales de resistencia al
+            calor y a productos químicos, siendo perfectos para aplicaciones
+            médicas y electrónicas.
+          </p>
+          <figure>
+            <img
+              src="https://st3.depositphotos.com/7457306/34556/i/600/depositphotos_345569708-stock-photo-bronze-on-a-lathe-processing.jpg"
+              alt=""
+            />
+          </figure>
+          <p>
+            Cada material presenta desafíos únicos en el proceso de mecanizado.
+            Por ejemplo, los metales duros como el acero inoxidable requieren
+            herramientas especializadas de alta dureza para evitar el desgaste,
+            mientras que los plásticos pueden deformarse debido al calor
+            generado durante el corte. Por ello, es esencial ajustar los
+            parámetros de la máquina, como la velocidad de corte y el avance,
+            para adaptarse a las características del material seleccionado.
+          </p>
+          <p>
+            Otro aspecto clave de esta transformación es la capacidad del CNC
+            para integrarse con tecnologías avanzadas como la impresión 3D y el
+            diseño asistido por computadora. Esto ha permitido que los procesos
+            de diseño y producción estén más conectados que nunca, facilitando
+            iteraciones rápidas y un flujo de trabajo más eficiente. También ha
+            llevado a la producción en masa de piezas personalizadas, algo que
+            anteriormente era costoso y complicado de implementar.
+          </p>
+          <img
+            src="https://st4.depositphotos.com/31134038/38125/i/600/depositphotos_381256446-stock-photo-metal-shavings-processing-cutting-turning.jpg"
+          />
+          <p>
+            La elección del material también está vinculada al costo y a las
+            necesidades de producción. Mientras que los metales como el acero y
+            el aluminio son relativamente económicos y fáciles de obtener,
+            materiales avanzados como el titanio o el PEEK suelen ser más
+            costosos, pero su rendimiento superior justifica la inversión en
+            aplicaciones específicas. Esta variedad de opciones permite que el
+            mecanizado CNC se utilice en una amplia gama de industrias, desde la
+            fabricación de productos cotidianos hasta componentes críticos para
+            sectores de alta tecnología.
+          </p>
+          <Footer />
+        </header>
+      </article>
+    </div>
+  </main>
+</Layout>

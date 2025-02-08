@@ -1,0 +1,155 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import About from "../../../components/About.astro";
+import Mention from "../../../components/Mention.astro";
+import Solutions from "../../../components/Solutions.astro";
+import Location from "../../../components/Location.astro";
+import Services from "../../../components/Services.astro";
+import Members from "../../../components/Members.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <!-- 
+Install the "flowbite-typography" NPM package to apply styles and format the article content: 
+
+URL: https://flowbite.com/docs/components/typography/ 
+-->
+
+  <main
+    class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+  >
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+      <article
+        class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert text-black"
+      >
+        <header class="mb-4 lg:mb-6 not-format">
+          <address class="flex items-center mb-6 not-italic">
+            <div
+              class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+            >
+            </div>
+          </address>
+          <h1
+            class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
+          >
+            Mecanizado CNC
+          </h1>
+          <p class="lead text-black">
+            El CNC, que significa Control Numérico por Computadora, es una
+            tecnología que automatiza el control de máquinas utilizadas en la
+            fabricación, como fresadoras, tornos y cortadoras.
+          </p>
+          <p>
+            En lugar de operarlas manualmente, estas máquinas funcionan a través
+            de instrucciones precisas generadas por una computadora. Este
+            sistema permite crear piezas de manera precisa y repetitiva,
+            siguiendo un diseño previamente definido.
+          </p>
+          <figure>
+            <img
+              src="https://static6.depositphotos.com/1000291/542/i/450/depositphotos_5428295-stock-photo-worker-operating-cnc-machine-center.jpg"
+              alt=""
+            />
+          </figure>
+          <p>
+            Una vez que se carga el programa en la máquina CNC, ésta realiza su
+            trabajo de forma automática, controlando todos los movimientos y
+            procesos necesarios para cortar, perforar, moldear o dar forma al
+            material.
+          </p>
+          <p>
+            Esto permite fabricar piezas complejas con una precisión difícil de
+            lograr manualmente. Además, al repetir el proceso con la misma
+            programación, todas las piezas resultan idénticas, algo crucial en
+            industrias como la automotriz o la aeronáutica.
+          </p>
+          <p>
+            El CNC ha transformado la manufactura al hacerla más eficiente,
+            precisa y capaz de producir en masa, reduciendo errores y ahorrando
+            tiempo. Es una herramienta clave en la industria moderna y en la
+            creación de productos que requieren altos estándares de calidad.
+          </p>
+          <p>
+            El proceso comienza con un diseño realizado en software CAD (Diseño
+            Asistido por Computadora), que luego se traduce a instrucciones
+            utilizables por la máquina mediante software CAM (Manufactura
+            Asistida por Computadora). Una vez cargado el programa en la
+            máquina, ésta opera de manera autónoma, garantizando resultados
+            consistentes y de alta precisión.
+          </p>
+          <p>
+            El CNC es ampliamente utilizado en sectores como la automoción, la
+            aeronáutica, la industria médica y la manufactura general, ya que
+            permite la producción de piezas complejas con eficiencia, rapidez y
+            repetitividad. Además, reduce el desperdicio de material y los
+            errores humanos, siendo una herramienta esencial en la era de la
+            fabricación avanzada.
+          </p>
+          <p>
+            Los componentes de una máquina CNC son variados y fundamentales para
+            garantizar su funcionamiento eficiente. En el corazón del sistema se
+            encuentra la unidad de control, que actúa como el cerebro de la
+            operación al interpretar y ejecutar las instrucciones del programa.
+            Las herramientas de corte, que pueden variar desde fresas y brocas
+            hasta cuchillas especializadas, son las encargadas de realizar las
+            operaciones físicas sobre el material. Para garantizar movimientos
+            precisos, los motores y actuadores desempeñan un papel crucial al
+            controlar el desplazamiento de la herramienta y del material. La
+            mesa, también conocida como cama, es donde se fija el material en
+            bruto, proporcionando estabilidad durante el proceso. Además, los
+            sistemas de sensores monitorean continuamente las operaciones,
+            ajustando parámetros en tiempo real para mantener la precisión y
+            calidad del trabajo.
+          </p>
+          <p>
+            Las máquinas CNC se clasifican en diferentes tipos, cada una
+            adaptada a aplicaciones específicas. Por ejemplo, las fresadoras CNC
+            se utilizan para cortar y dar forma a los materiales mediante
+            movimientos en múltiples ejes, mientras que los tornos CNC son
+            ideales para operaciones que implican girar el material para
+            trabajar sobre él. Las cortadoras láser CNC destacan por su
+            capacidad para realizar cortes precisos en materiales como metal,
+            madera y plástico mediante el uso de un rayo láser. Las cortadoras
+            de plasma CNC, por otro lado, son perfectas para trabajar con
+            materiales metálicos utilizando un arco de plasma. Los routers CNC,
+            en cambio, son herramientas versátiles y eficientes para cortar
+            madera, plásticos e incluso aluminio. También existen las máquinas
+            de electroerosión CNC, que emplean descargas eléctricas controladas
+            para cortar materiales conductores, y las impresoras 3D, que, aunque
+            funcionan bajo un principio de adición de material, comparten
+            ciertas similitudes con el CNC tradicional.
+          </p>
+          <p>
+            En cuanto a sus ventajas, la tecnología CNC ofrece una precisión
+            excepcional que la hace ideal para fabricar piezas complejas con
+            tolerancias muy estrictas. Además, su capacidad para repetir
+            procesos de manera idéntica garantiza la consistencia en la
+            producción de múltiples piezas. Este nivel de automatización no solo
+            reduce los tiempos de fabricación, sino que también incrementa
+            significativamente la productividad. Por su flexibilidad, permite
+            cambiar rápidamente entre diseños y fabricar piezas personalizadas
+            sin necesidad de modificar físicamente las máquinas. Al automatizar
+            gran parte del proceso, minimiza los errores humanos, lo que resulta
+            en una producción más confiable. Finalmente, el CNC optimiza el uso
+            de materiales, reduciendo desperdicios y contribuyendo a un uso más
+            eficiente de los recursos.
+          </p>
+          <img
+            src="https://st5.depositphotos.com/26776340/70536/i/600/depositphotos_705363270-stock-photo-people-shot-cnc-machine-modern.jpg"
+            alt="machine"
+          />
+          <Footer />
+        </header>
+      </article>
+    </div>
+  </main>
+</Layout>

@@ -1,0 +1,133 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import Header from "../../../components/Header.astro";
+import About from "../../../components/About.astro";
+import Mention from "../../../components/Mention.astro";
+import Solutions from "../../../components/Solutions.astro";
+import Location from "../../../components/Location.astro";
+import Services from "../../../components/Services.astro";
+import Members from "../../../components/Members.astro";
+import Footer from "../../../components/Footer.astro";
+---
+
+<Layout title="Sonora Precision">
+  <!--
+// v0 by Vercel.
+// https://v0.dev/t/l9KOIPyiwq1
+-->
+
+  <Nav />
+  <header
+    class="relative w-full h-[35rem] bg-cover bg-center bg-[url('/Users/jesusvalenzuela/Documents/GitHub/SonoraPrecision.github.io/public/assets/tool.jpg')]"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative flex-col items-center h-full text-white">
+      <h3 class="pl-20 pt-80 text-left text-white mb-4 text-5xl font-bold">
+        Como elegir la herramienta correcta
+      </h3>
+      <div class="pl-20 flex space-x-3 text-sm text-gray-400">
+        <br />
+        <span>Enero 29, 2025</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido del blog -->
+  <section
+    class="shadow flex space-x-20 absolute inset-x-0 top-[27rem] mx-auto bg-white p-6 rounded-lg w-5/6"
+  >
+    <div class="max-w-5xl">
+      <p class="text-justify mb-4 lead text-black">
+        Seleccionar la herramienta adecuada en el mecanizado CNC es una decisión
+        crucial que impacta directamente en la calidad, precisión y eficiencia
+        del proceso. No todas las herramientas son iguales, y su elección
+        depende de factores como el material de la pieza, el tipo de operación a
+        realizar y las condiciones de corte. Una selección incorrecta puede
+        generar defectos, reducir la vida útil de la herramienta y aumentar los
+        costos de producción.
+      </p>
+      <p class="text-justify mb-4 text-black">
+        El material de la pieza es el primer factor a considerar. Para metales
+        blandos como el aluminio, se recomiendan herramientas de carburo de
+        tungsteno con recubrimientos que reduzcan la fricción y el desgaste. En
+        cambio, el acero inoxidable y las aleaciones duras requieren
+        herramientas con recubrimientos específicos como TiAlN o diamante para
+        mejorar la resistencia térmica y el rendimiento del corte. Para
+        plásticos y compuestos, es esencial elegir herramientas con filos
+        afilados y geometrías adecuadas para evitar el sobrecalentamiento y la
+        deformación del material.
+      </p>
+      <img
+        class="mx-auto mb-4 border rounded-xl w-5/6 h-1/4"
+        src="https://images.pexels.com/photos/46973/taps-thread-drill-milling-46973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      />
+      <p class="text-justify mb-4 text-black">
+        El tipo de operación también juega un papel clave. Para desbaste, donde
+        se busca remover grandes cantidades de material rápidamente, se utilizan
+        fresas de alto avance con múltiples filos para mejorar la eficiencia del
+        corte. En acabado, se requieren herramientas de precisión con filos
+        afilados para lograr superficies lisas y tolerancias ajustadas. Las
+        brocas helicoidales son ideales para perforaciones, mientras que las
+        herramientas de roscado permiten la creación de hilos internos en piezas
+        metálicas. En el torneado, las plaquitas intercambiables ofrecen
+        versatilidad y permiten mecanizar una amplia gama de materiales sin
+        necesidad de cambiar toda la herramienta.
+      </p>
+      <p class="text-justify mb-4 text-black">
+        Las condiciones de corte, como la velocidad de giro, el avance y la
+        profundidad de corte, influyen en la selección de la herramienta. Un
+        material duro requiere velocidades de corte más bajas y herramientas con
+        geometrías específicas para evitar el desgaste prematuro. En operaciones
+        de alta velocidad, las herramientas con recubrimientos avanzados y filos
+        resistentes al calor son indispensables para mantener la estabilidad del
+        proceso.
+      </p>
+      <img
+        class="mx-auto mb-4 border rounded-xl w-5/6 h-1/4"
+        src="https://st3.depositphotos.com/1000647/15317/i/600/depositphotos_153172914-stock-photo-metalworking-cnc-milling-machine.jpg"
+      />
+      <p class="text-justify mb-4 text-black">
+        Además, la elección de la herramienta está influenciada por la máquina
+        CNC utilizada. Algunas máquinas tienen límites en la velocidad de giro
+        del husillo o en la capacidad de sujeción de la herramienta, lo que
+        obliga a seleccionar herramientas compatibles con sus especificaciones.
+        También es importante considerar el sistema de refrigeración y la
+        evacuación de virutas para evitar problemas como el sobrecalentamiento o
+        el atasco del material removido.
+      </p>
+      <p class="text-justify mb-4 text-black">
+        En la fabricación moderna, el software de simulación y las bases de
+        datos de herramientas han facilitado la selección adecuada, permitiendo
+        optimizar los parámetros de corte y maximizar la vida útil de las
+        herramientas. En última instancia, elegir la herramienta correcta en el
+        mecanizado CNC no es solo una cuestión técnica, sino una estrategia para
+        mejorar la productividad y garantizar piezas de alta calidad.
+      </p>
+      <Footer />
+    </div>
+    <section>
+      <div class="sticky top-[60px]">
+        <p class="font-bold text-indigo-600 text-2xl">Podría interesarte...</p>
+        <div class="w-[400px] h-[350px] shadow mt-[10px] rounded-xl">
+          <img
+            src="/assets/3d printer.jpg"
+            class="overflow-hidden h-[235px] w-full rounded-t-xl"
+          />
+          <p class="font-bold text-black pt-4 pl-2">Mecanizado CNC vs Impresion 3D...</p>
+          <p class="font-bold text-indigo-600 pl-2 pt-4">Ver mas...</p>
+        </div>
+      </div>
+      <div class="sticky top-[462px]">
+        <div class="w-[400px] h-[350px] shadow mt-[10px] rounded-xl">
+          <img
+            src="/assets/3d printer.jpg"
+            class="overflow-hidden h-[235px] w-full rounded-t-xl"
+          />
+          <p class="font-bold text-black pt-4 pl-2">Mecanizado CNC vs Impresion 3D...</p>
+          <p class="font-bold text-indigo-600 pl-2 pt-4">Ver mas...</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</Layout>
