@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/",
   outDir: "./docs",
   build: {
-    assets: "app_assets"
+    assets: "assets"
   },
   integrations: [tailwind()]
 });
