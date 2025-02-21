@@ -16,104 +16,126 @@ import Footer from "../../../components/Footer.astro";
 // v0 by Vercel.
 // https://v0.dev/t/l9KOIPyiwq1
 -->
+<headerpublic
+class="relative w-full h-[35rem] bg-cover bg-center bg-[url('../assets/3d printer.jpg')]"
+>
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative flex-col items-center h-full text-white">
+  <h3 class="pl-20 pt-80 text-left text-white mb-4 text-5xl font-bold">
+    Como elegir la herramienta correcta
+  </h3>
+  <div class="pl-20 flex space-x-3 text-sm text-gray-400">
+    <br />
+    <span>Enero 29, 2025</span>
+  </div>
+</div>
+</header>
 
-  <Nav />
-  <!-- 
-Install the "flowbite-typography" NPM package to apply styles and format the article content: 
-
-URL: https://flowbite.com/docs/components/typography/ 
--->
-
-  <main
-    class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
-  >
-    <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
-      <article
-        class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert text-black"
+<!-- Contenido del blog -->
+<section
+class="shadow flex space-x-20 absolute inset-x-0 top-[27rem] mx-auto bg-white p-6 rounded-lg w-5/6"
+>
+<div class="max-w-5xl">
+  <p class="text-justify mb-4 lead text-black">
+    Seleccionar la herramienta adecuada en el mecanizado CNC es una decisión
+    crucial que impacta directamente en la calidad, precisión y eficiencia
+    del proceso. No todas las herramientas son iguales, y su elección
+    depende de factores como el material de la pieza, el tipo de operación a
+    realizar y las condiciones de corte. Una selección incorrecta puede
+    generar defectos, reducir la vida útil de la herramienta y aumentar los
+    costos de producción.
+  </p>
+  <p class="text-justify mb-4 text-black">
+    El material de la pieza es el primer factor a considerar. Para metales
+    blandos como el aluminio, se recomiendan herramientas de carburo de
+    tungsteno con recubrimientos que reduzcan la fricción y el desgaste. En
+    cambio, el acero inoxidable y las aleaciones duras requieren
+    herramientas con recubrimientos específicos como TiAlN o diamante para
+    mejorar la resistencia térmica y el rendimiento del corte. Para
+    plásticos y compuestos, es esencial elegir herramientas con filos
+    afilados y geometrías adecuadas para evitar el sobrecalentamiento y la
+    deformación del material.
+  </p>
+  <img
+    class="mx-auto mb-4 border rounded-xl w-5/6 h-1/4"
+    src="https://images.pexels.com/photos/46973/taps-thread-drill-milling-46973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  />
+  <p class="text-justify mb-4 text-black">
+    El tipo de operación también juega un papel clave. Para desbaste, donde
+    se busca remover grandes cantidades de material rápidamente, se utilizan
+    fresas de alto avance con múltiples filos para mejorar la eficiencia del
+    corte. En acabado, se requieren herramientas de precisión con filos
+    afilados para lograr superficies lisas y tolerancias ajustadas. Las
+    brocas helicoidales son ideales para perforaciones, mientras que las
+    herramientas de roscado permiten la creación de hilos internos en piezas
+    metálicas. En el torneado, las plaquitas intercambiables ofrecen
+    versatilidad y permiten mecanizar una amplia gama de materiales sin
+    necesidad de cambiar toda la herramienta.
+  </p>
+  <p class="text-justify mb-4 text-black">
+    Las condiciones de corte, como la velocidad de giro, el avance y la
+    profundidad de corte, influyen en la selección de la herramienta. Un
+    material duro requiere velocidades de corte más bajas y herramientas con
+    geometrías específicas para evitar el desgaste prematuro. En operaciones
+    de alta velocidad, las herramientas con recubrimientos avanzados y filos
+    resistentes al calor son indispensables para mantener la estabilidad del
+    proceso.
+  </p>
+  <img
+    class="mx-auto mb-4 border rounded-xl w-5/6 h-1/4"
+    src="https://st3.depositphotos.com/1000647/15317/i/600/depositphotos_153172914-stock-photo-metalworking-cnc-milling-machine.jpg"
+  />
+  <p class="text-justify mb-4 text-black">
+    Además, la elección de la herramienta está influenciada por la máquina
+    CNC utilizada. Algunas máquinas tienen límites en la velocidad de giro
+    del husillo o en la capacidad de sujeción de la herramienta, lo que
+    obliga a seleccionar herramientas compatibles con sus especificaciones.
+    También es importante considerar el sistema de refrigeración y la
+    evacuación de virutas para evitar problemas como el sobrecalentamiento o
+    el atasco del material removido.
+  </p>
+  <p class="text-justify mb-4 text-black">
+    En la fabricación moderna, el software de simulación y las bases de
+    datos de herramientas han facilitado la selección adecuada, permitiendo
+    optimizar los parámetros de corte y maximizar la vida útil de las
+    herramientas. En última instancia, elegir la herramienta correcta en el
+    mecanizado CNC no es solo una cuestión técnica, sino una estrategia para
+    mejorar la productividad y garantizar piezas de alta calidad.
+  </p>
+  <Footer />
+</div>
+<section>
+  <div class="sticky top-[60px]">
+    <p class="font-bold text-indigo-600 text-2xl">Podría interesarte...</p>
+    <div class="w-[400px] h-[350px] shadow mt-[10px] rounded-xl">
+      <img
+        src="/assets/3d printer.jpg"
+        class="overflow-hidden h-[235px] w-full rounded-t-xl"
+      />
+      <p class="font-bold text-black pt-4 pl-2">
+        Mecanizado CNC vs Impresion 3D...
+      </p>
+      <a
+        href="diferencias-entre-el-mecanizado-cnc-y-la-impresion-3d"
+        class="font-bold text-indigo-600 pl-2 pt-4 hover:text-black"
+        >Ver mas...</a
       >
-        <header class="mb-4 lg:mb-6 not-format">
-          <address class="flex items-center mb-6 not-italic">
-            <div
-              class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
-            >
-            </div>
-          </address>
-          <h1
-            class="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white"
-          >
-            CNC e impresion 3D
-          </h1>
-          <p class="lead text-black">
-            El mecanizado CNC y la impresión 3D son dos tecnologías de
-            fabricación que, aunque comparten el objetivo de crear piezas
-            precisas y funcionales, difieren fundamentalmente en sus enfoques y
-            aplicaciones. El mecanizado CNC es un proceso sustractivo que
-            implica la eliminación de material de un bloque sólido mediante
-            herramientas controladas por computadora, lo que permite obtener
-            piezas con tolerancias muy ajustadas y acabados superficiales de
-            alta calidad. Por otro lado, la impresión 3D es un proceso aditivo
-            que construye objetos capa por capa, depositando material según un
-            diseño digital, lo que facilita la creación de geometrías complejas
-            que serían difíciles o imposibles de lograr con métodos
-            tradicionales.
-          </p>
-          <p>
-            Una de las principales ventajas del mecanizado CNC es su capacidad
-            para trabajar con una amplia variedad de materiales, incluyendo
-            metales, plásticos y compuestos, ofreciendo una excelente precisión
-            y repetibilidad. Sin embargo, este proceso puede generar una
-            cantidad significativa de desperdicio de material, especialmente en
-            piezas que requieren la eliminación de grandes volúmenes. Además, la
-            configuración inicial y la programación de las máquinas CNC pueden
-            ser laboriosas y requieren personal especializado.
-          </p>
-          <figure>
-            <img
-              src="https://tse3.mm.bing.net/th?id=OIP.GHq4CaP_tbit7UDxU6eugAHaE7&pid=Api"
-            />
-          </figure>
-          <p>
-            En contraste, la impresión 3D minimiza el desperdicio de material al
-            añadir solo lo necesario para construir la pieza, lo que la
-            convierte en una opción más sostenible para ciertas aplicaciones. Es
-            especialmente útil para la creación de prototipos rápidos y piezas
-            con geometrías intrincadas o internas complejas. No obstante, la
-            impresión 3D puede presentar limitaciones en términos de resistencia
-            mecánica y acabado superficial, dependiendo del material y la
-            tecnología utilizada. Además, los tiempos de impresión pueden ser
-            prolongados para piezas de gran tamaño o alta densidad.
-          </p>
-          <p>
-            Uno de los aspectos más relevantes del mecanizado CNC es su
-            capacidad para lograr una precisión extrema, algo fundamental en
-            industrias como la aeroespacial, la automotriz y la médica. La
-            capacidad de trabajar con materiales como titanio, acero inoxidable
-            o aluminio con tolerancias de micrómetros hace que el CNC sea la
-            mejor opción para piezas críticas que requieren alta resistencia y
-            durabilidad. En cambio, la impresión 3D es particularmente útil en
-            la fase de prototipado, permitiendo iteraciones rápidas sin los
-            costos asociados a la fabricación tradicional. En sectores como la
-            arquitectura y la ingeniería, donde las pruebas de concepto y los
-            diseños preliminares son clave, la impresión 3D ha cambiado
-            radicalmente los tiempos de desarrollo y experimentación.
-          </p>
-          <img
-            src="https://tse3.mm.bing.net/th?id=OIP.dZ67ZT3PnP-4tIIPb_T4ngHaE7&w=315&h=315&c=7"
-          />
-          <p>
-            La integración de ambas tecnologías en un flujo de trabajo híbrido
-            permite aprovechar lo mejor de cada una. Por ejemplo, una pieza
-            puede ser inicialmente impresa en 3D para obtener una forma
-            aproximada o una geometría compleja, y luego ser sometida a
-            mecanizado CNC para refinar superficies críticas, ajustar
-            tolerancias o añadir características que requieren alta precisión.
-            Este enfoque combinado no solo optimiza el uso de materiales y
-            reduce los tiempos de producción, sino que también amplía las
-            posibilidades de diseño y funcionalidad de las piezas finales.
-          </p>
-          <Footer />
-        </header>
-      </article>
     </div>
-  </main>
+  </div>
+  <div class="sticky top-[462px]">
+    <div
+      class="w-[400px] h-[350px] shadow mt-[10px] rounded-xl group-hover:bg-gray-50 group-hover:scale-105"
+    >
+      <img
+        src="/assets/metal drilling.jpg"
+        class="overflow-hidden h-[235px] w-full rounded-t-xl"
+      />
+      <p class="font-bold text-black pt-4 pl-2">
+        La revolución del mecanizado CNC
+      </p>
+      <a href="la-revolucion-del-mecanizado-cnc-en-la-manufactura-moderna" class="pl-2 pt-7 text-indigo-600 hover:text-black font-bold"> Ver mas...</a>
+    </div>
+  </div>
+</section>
+</section>
 </Layout>
